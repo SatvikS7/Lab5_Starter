@@ -7,10 +7,10 @@ function init() {
 
   document.addEventListener('DOMContentLoaded', function () {
     const synth = window.speechSynthesis;
-    const faceImage = document.getElementById('face-image');
-    const textArea = document.getElementById('text-to-speak');
-    const voiceSelect = document.getElementById('voice-select');
-    const talkBtn = document.getElementById('talk-button');
+    const faceImage = document.getElementById("face-image");
+    const textArea = document.getElementById("text-to-speak");
+    const voiceSelect = document.getElementById("voice-select");
+    const talkBtn = document.getElementById("talk-button");
 
     function populateVoices() {
       if(synth.getVoices().length === 0) {
@@ -18,8 +18,10 @@ function init() {
       }
       const voices = synth.getVoices();
       voiceSelect.innerHTML = voices.map(voice => 
-      '<option value="${voice.name}">${voice.name} (${voice.lang})</option>').join('');
+        '<option value="${voice.name}">${voice.name} (${voice.lang})</option>'
+      ).join('');
     }
+
     populateVoices();
 
     function speak() {
