@@ -10,7 +10,7 @@ function init() {
     const faceImage = document.getElementById('face-image');
     const textArea = document.getElementById('text-to-speak');
     const voiceSelect = document.getElementById('voice-select');
-    const talkButt = document.getElementById('talk-button');
+    const talkBtn = document.getElementById('talk-button');
 
     function populateVoices() {
       if(synth.getVoices().length === 0) {
@@ -39,6 +39,6 @@ function init() {
         synth.speak(utter);
       }
     }
-    talkButt.addEventListener('click', speak);
+    talkBtn.addEventListener('click', speak);
   })
 }
