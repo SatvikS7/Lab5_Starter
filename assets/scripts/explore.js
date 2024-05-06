@@ -33,10 +33,10 @@ function init() {
         const utter = new SpeechSynthesisUtterance(textArea.value);
         utter.voice = synth.getVoices().find(voice => voice.name === voiceSelect.value);
         utter.onstart = () => {
-          faceImage.src = 'assets/images/smiling-open.png';
+          faceImage.src = 'assets/images/smiling.png';
         };
         utter.onend = () => {
-          faceImage.src = 'assets/images/smiling.png';
+          faceImage.src = 'assets/images/smiling-open.png';
         };
         synth.speak(utter);
       }
