@@ -87,19 +87,19 @@ test('Is 5/5/2024 a date?', () => {
 
 
 //isHexColor Tests: 
-test('Is red a date?', () => {
+test('Is red a hex code?', () => {
   expect(isHexColor('red')).toBe(false);
 });
 
-test('Is 2000 a date?', () => {
+test('Is 2000 a hex code?', () => {
   expect(isHexColor('2000')).toBe(false);
 });
 
-test('Is #25d5Cb a date?', () => {
+test('Is #25d5Cb a hex code?', () => {
   expect(isHexColor('#25d5Cb')).toBe(true);
 });
 
-test('Is 533dd3 a date?', () => {
+test('Is 533dd3 a hex code?', () => {
   expect(isHexColor('533dd3')).toBe(true);
 });
 
