@@ -15,7 +15,7 @@ test('Is 5 a number?', () => {
   expect(isPhoneNumber('5')).toBe(false);
 });
 
-test('Is 0000000000000000 a number?', () => {
+test('Is 222222222222222 a number?', () => {
   expect(isPhoneNumber('222222222222222')).toBe(false);
 });
 
